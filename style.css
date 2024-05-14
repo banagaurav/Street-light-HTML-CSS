@@ -1,0 +1,197 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#main{
+    /* background-color: rgba(0, 45, 88, 1); */
+}
+.StreetLight{
+    position: absolute;
+    left: 4px;
+    top: -9px;
+}
+.HootBody{
+/* hoot body */
+
+position: absolute;
+    width: 82.5px;
+    height: 37.5px;
+    left: 136px;
+    top: 121px;
+    background:rgba(54, 76, 96, 1);
+    clip-path: polygon(53% 0, 0% 100%, 100% 100%);
+}
+
+.hootHL{
+    position: absolute;
+    width: 40.19px;
+    height: 35.5px;
+    left: 179px;
+    top: 121px;
+    background: #4F6B85;
+    clip-path: polygon(0 0, 24% 100%, 100% 112%);
+}
+.LightBody{
+
+/* lamp body */
+
+position: absolute;
+    width: 64.5px;
+    height: 51px;
+    left: 145px;
+    top: 158px;
+    background: #4F6B85;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 26% 100%);
+    z-index: 1;
+}
+
+.LightSource{
+    position: absolute;
+    width: 59.5px;
+    height: 47px;
+    left: 148px;
+    top: 160px;
+    background: #D9D9D9;
+    clip-path: polygon(0 0, 97% 0, 84% 97%, 26% 99%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.PipeBody{
+    position: absolute;
+    width: 21px;
+    height: 247px;
+    left: 171px;
+    top: 208px;
+    background:rgba(54, 76, 96, 1);
+    clip-path: polygon(15% 0, 76% 0, 100% 100%, 0% 100%);
+}
+
+.PipeHl{
+    position: absolute;
+    width: 15px;
+    height: 245px;
+    left: 183px;
+    top: 210px;
+    background: #4F6B85;
+    clip-path: polygon(0 0, 16% 0, 55% 100%, 12% 100%);
+}
+
+.JointE1{
+    position: absolute;
+    width: 32px;
+    height: 12px;
+    left: 165px;
+    top: 449px;
+    background: rgba(50, 61, 71, 1);
+    clip-path: ellipse(50% 35% at 50% 50%);
+}
+
+.JointE2{
+position: absolute;
+width: 59px;
+height: 20px;
+left: 152px;
+top: 446px;
+background: #4F6B85;
+clip-path: ellipse(49% 46% at 50% 50%);
+}
+
+.JointE3{
+    position: absolute;
+    width: 59px;
+    height: 20px;
+    left: 152px;
+    top: 453px;
+    background: rgba(50, 61, 71, 1);
+    clip-path: ellipse(49% 46% at 50% 50%);
+}
+
+.Base{
+    position: absolute;
+    width: 53.5px;
+    height: 91.5px;
+    left: 156.5px;
+    top: 468px;
+    background: #364C60;
+    clip-path: polygon(24% 0%, 70% 0, 100% 100%, 0% 100%);
+}
+
+.BaseHl{
+    position: absolute;
+    width: 24.5px;
+    height: 87.5px;
+    left: 183px;
+    top: 470.5px;
+    background: #4F6B85;
+    clip-path: polygon(0 0, 44% 0, 105% 100%, 36% 100%);
+
+}
+
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+input:checked{
+    background-color: #F6EB87;
+
+}
+
+  
+.lampElement{
+    height: 47px;
+    width: 5px;
+    background-color: #4F6B85;
+    position: absolute;
+    left: 179px;
+    top: 160px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 56% 100%);
+    z-index:1;
+}
+
+input:checked ~ #Light{
+    background: rgb(241,232,150);
+    background: linear-gradient(180deg, rgba(241,232,150,1) 0%, rgba(241,232,150,1) 12%, rgba(139,134,87,0.14338235294117652) 100%);
+    width: 20.3rem;
+    position: absolute;
+    height: 24.5rem;
+    left: 17px;
+    top: 163px;
+    clip-path: polygon(41% 0, 58% 0, 100% 100%, 0 100%);
+    animation:3s cube;
+}
+
+input:checked ~ .groundShadow{
+    position: absolute;
+    width: 332px;
+    height: 56px;
+    left: 13px;
+    top: 528px;
+    background: #F6EB87;
+    clip-path: ellipse(49% 38% at 50% 50%);
+    animation:1s shadow;
+}
+@keyframes cube{
+    0%{
+        background: rgb(243, 243, 150);
+    }
+    90%{
+        background-color: white;
+    }
+    100%{
+        background: linear-gradient(180deg, rgba(241,232,150,1) 0%, rgba(241,232,150,1) 12%, rgba(139,134,87,0.14338235294117652) 100%);
+    }
+}
+@keyframes shadow{
+    0%{
+        background: rgb(243, 243, 150);
+    }
+    90%{
+        background-color: rgba(251, 239, 0, 0.409);
+    }
+    100%{
+        background: #F6EB87
+    }
+}
